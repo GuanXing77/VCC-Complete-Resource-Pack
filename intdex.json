@@ -1,0 +1,25 @@
+{
+  "name": "个人 VPM 聚合源",
+  "id": "com.guanxing77.vcc-complete-resource-pack",
+  "author": {
+    "name": "十元"
+  },
+  "description": "VRChat头像制作工具聚合，整合大量社区VPM仓库",
+  "githubRepos": [
+    "https://lilxyzw.github.io/vpm-repos/vpm.json",
+    "https://xtlcdm.github.io/vpm-repos/vpm.json",
+    "https://vpm.nadena.dev/vpm.json",
+    "https://vpm.kwxxw.net/vpm.json",
+    "https://vcc.vrcfury.com/vpm.json",
+    "https://suzuryg.github.io/vpm-repos/vpm.json",
+    "https://kurotu.github.io/vpm-repos/vpm.json",
+    "https://vpm.narazaka.net/vpm.json",
+    "https://azukimochi.github.io/vpm-repos/vpm.json",
+    "https://vpm.anatawa12.com/vpm.json",
+    "https://vrcd.vrczh.org/vpm.json",
+    "https://vpm.pimaker.at/vpm.json",
+    "https://vpm.limitex.dev/vpm.json",
+    "https://redsim.github.io/vpm-repos/vpm.json"
+  ],
+  "packages": []
+}
