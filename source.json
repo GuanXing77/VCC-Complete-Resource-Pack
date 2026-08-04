@@ -1,10 +1,12 @@
 {
-  "name": "VCC Complete Resource Pack",
-  "id": "com.guanxing77.vcc-complete-resource",
+  "name": "个人VPM资源源",
+  "id": "com.guanxing77.vpmcollection",
+  "url": "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json",
   "author": {
-    "name": "十元",
-    "email": "an3048897967@163.com"
+    "name": "GuanXing77"
   },
-  "description": "个人汇总VRC头像工具源",
-  "sources": []
+  "description": "自定义VRChat Avatar工具汇总源，用于VCC添加仓库",
+  "infoLink": "https://github.com/GuanXing77/VCC-Complete-Resource-Pack",
+  "githubRepos": [],
+  "packages": []
 }
