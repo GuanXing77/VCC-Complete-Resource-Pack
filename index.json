@@ -1,5 +1,5 @@
 {
-  "name": "个人VPM资源源",
+  "name": "PoetryFar's VPN Packag",
   "id": "com.guanxing77.vpmcollection",
   "url": "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json",
   "author": {
@@ -8,5 +8,594 @@
   "description": "自定义VRChat Avatar工具汇总源，用于VCC添加仓库",
   "infoLink": "https://github.com/GuanXing77/VCC-Complete-Resource-Pack",
   "githubRepos": [],
-  "packages": []
-}
+  "packages": {
+    "jp.lilxyzw.liltoon": {
+      "versions": {
+        "2.3.4": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.3.4",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.3.4/jp.lilxyzw.liltoon‑2.3.4.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "34d172761c51aa9469a904704109086aafa6125a4fa0e058766e2ddc73d3b303"
+        },
+        "2.3.3": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.3.3",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.3.3/jp.lilxyzw.liltoon‑2.3.3.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "3ec08aa0e1dd6dd4a266ce4b5820ee8eb53378606ded8c9adf6a3a990a6050d9"
+        },
+        "2.3.2": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.3.2",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.3.2/jp.lilxyzw.liltoon‑2.3.2.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "ecb8fe038f05b73217513d9160f410479b7722426f653e983f630169b1c54474"
+        },
+        "2.3.1": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.3.1",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.3.1/jp.lilxyzw.liltoon‑2.3.1.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "8fe3df2bfbfc2697db7d6e0c27b6dd421938123331e0c282e6bde946020b35e6"
+        },
+        "2.3.0": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.3.0",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.3.0/jp.lilxyzw.liltoon‑2.3.0.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "211c4e5c0168dfa58701b30e13660b4917b409484c910a6d2121e9f783297945"
+        },
+        "2.2.1": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.2.1",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.2.1/jp.lilxyzw.liltoon‑2.2.1.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "2aab5ddd64ba6aaed0278301c425bb3188ee8542251d38d9f18a12ff6f10f7b9"
+        },
+        "2.2.0": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.2.0",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.2.0/jp.lilxyzw.liltoon‑2.2.0.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "3381cd3418b6fc41c301cb466f9f637918a6486f8ea1ada408f4609289d899fc"
+        },
+        "2.1.10": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.10",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.10/jp.lilxyzw.liltoon‑2.1.10.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "975cb1e06597f3ce7405cff67073627ca88e8097fb49d1dae88a8141fdfabbd9"
+        },
+        "2.1.9": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.9",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.9/jp.lilxyzw.liltoon‑2.1.9.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "c70cb4d0366522ee3862b14873ec6787747b5be464b52d0ef6d454dd1139bf7f"
+        },
+        "2.1.8": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.8",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.8/jp.lilxyzw.liltoon‑2.1.8.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "c10b0ba27648ada9becafac54b14de765052f7e8a486c8f07c654256d756970e"
+        },
+        "2.1.7": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.7",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.7/jp.lilxyzw.liltoon‑2.1.7.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "dc97bd3d6657090ffad3824faf619b6958e33b9dd70852cccab518c5d1c0a9bf"
+        },
+        "2.1.6": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.6",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.6/jp.lilxyzw.liltoon‑2.1.6.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "2f92c6e5170307487d228fbbe9f9b2b5ca8cc94afddf208573de0e92f24e0e4d"
+        },
+        "2.1.5": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.5",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.5/jp.lilxyzw.liltoon‑2.1.5.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "09f1abecae7dad3168148a23333229d41a5576174d046e9874d32df5eb8aa419"
+        },
+        "2.1.4": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.4",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.4/jp.lilxyzw.liltoon‑2.1.4.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "08737f8b49faf51c14c939f2cfa6f9e4dab16fb62f25b9b8c258b583d7448669"
+        },
+        "2.1.3": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.3",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.3/jp.lilxyzw.liltoon‑2.1.3.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "553dc2a73298bd2cdb69ef7ca261b577703706167ded1519bf53ec865bce3c44"
+        },
+        "2.1.2": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.2",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.2/jp.lilxyzw.liltoon‑2.1.2.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "e857baa620777e433d2c32680796f90b5bbac4f886b15addccea6e5dd7e90dd8"
+        },
+        "2.1.1": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.1",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.1/jp.lilxyzw.liltoon‑2.1.1.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "7bec5cb0b6e38ec52d6ec6e1be2e838e3e7a01f5ebb93e89b1a79b81fee5ffac"
+        },
+        "2.1.0": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.1.0",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.1.0/jp.lilxyzw.liltoon‑2.1.0.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "3c18da9be8dce0b921459fddbbbae928c558f2b1888f588f26c173a1ac8ec836"
+        },
+        "2.0.0": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "2.0.0",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2022.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/2.0.0/jp.lilxyzw.liltoon‑2.0.0.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "a45b411d9c433732d92c332114c3709e83161e4f9ec1bbe23725531337810004"
+        },
+        "1.10.3": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.10.3",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.10.3/jp.lilxyzw.liltoon‑1.10.3.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "25264cf7f463a97110b7b7313e6a49ea14d76e515634319043379546294c65e0"
+        },
+        "1.10.2": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.10.2",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.10.2/jp.lilxyzw.liltoon‑1.10.2.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "f6452f69ad0df87721472638a1069be3108c831939993bc25457455796d302c1"
+        },
+        "1.10.1": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.10.1",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.10.1/jp.lilxyzw.liltoon‑1.10.1.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "a8dec2237874def0bc3f4660b6c4f2bfebdb67967a69903a4605ac549a16de7d"
+        },
+        "1.10.0": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.10.0",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.10.0/jp.lilxyzw.liltoon‑1.10.0.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "b57a58ee5c70b17b1a0dfbc588b21f83aff93c53fb0fd1122b6c97e962c2a251"
+        },
+        "1.9.0": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.9.0",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.9.0/jp.lilxyzw.liltoon‑1.9.0.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "1df819d802d872698189eaf153864c82336f3f3b8eea66e99375633b42179c88"
+        },
+        "1.8.5": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.8.5",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.8.5/jp.lilxyzw.liltoon‑1.8.5.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "9445f7f44af36585cbbc70b8c5a518e05be6c9f3b6d8aa5051c86d671fcba7fc"
+        },
+        "1.8.4": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.8.4",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.8.4/jp.lilxyzw.liltoon‑1.8.4.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "47b23d27a4c6f239d43aa257b8692e4bdb43df9ba2bf623447c26a4eb397b5d8"
+        },
+        "1.8.3": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.8.3",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.8.3/jp.lilxyzw.liltoon‑1.8.3.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "7aa4d871e295120f684cd771f6f4538903fd8fdec962bd956a215588c4ba9c9a"
+        },
+        "1.8.2": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.8.2",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.3",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.8.2/jp.lilxyzw.liltoon‑1.8.2.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "f803b28242a3cde7f8dd9d692c2cc488238505a2ca4ddac922e76ac6d1ed26d8"
+        },
+        "1.8.1": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.8.1",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.1",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.8.1/jp.lilxyzw.liltoon‑1.8.1.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "08753e53c477169fc2f1cde26138ee861bb5a780d059e79e8b3cd8be4a2af6b8"
+        },
+        "1.8.0": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.8.0",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.1",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.8.0/jp.lilxyzw.liltoon‑1.8.0.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "d8d35a54a0f902076a1bf3937d9aaed9f48675614d7a1dd0dd08f83f3c5e6a21"
+        },
+        "1.7.3": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.7.3",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.1",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.7.3/jp.lilxyzw.liltoon‑1.7.3.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "397115b7f69df4c19ae7f4afe7a80c626a9fdcaf8b2abe73a89bf34ca2b175e9"
+        },
+        "1.7.2": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.7.2",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.1",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github.com/lilxyzw/lilToon/releases/download/1.7.2/jp.lilxyzw.liltoon‑1.7.2.zip?",
+          "repo": "https://lilxyzw.github.io/vpm‑repos/vpm.json",
+          "legacyFolders": {
+            "Assets\\lilToon": "05d1d116436047941ad97d1b9064ee05"
+          },
+          "zipSHA256": "0cd365ee18bdf7bff8878df0107e6a6b946d8af92c32dfc985af9d816c5abaac"
+        },
+        "1.7.1": {
+          "name": "jp.lilxyzw.liltoon",
+          "version": "1.7.1",
+          "displayName": "lilToon",
+          "description": "Feature‑rich toon shader.",
+          "unity": "2018.1",
+          "documentationUrl": "https://lilxyzw.github.io/lilToon/",
+          "changelogUrl": "https://lilxyzw.github.io/lilToon/#/en‑us/other/changelog",
+          "licensesUrl": "https://github.com/lilxyzw/lilToon/blob/master/Assets/lilToon/LICENSE",
+          "license": "MIT",
+          "keywords": ["Toon", "Shader", "Material"],
+          "url": "https://github
