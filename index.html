@@ -3,70 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VCC完整资源包</title>
+    <title>VPM 源 | 个人资源汇总</title>
     <style>
         * {
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            font-family: system-ui, sans-serif;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
         }
-        .hero{
-            background-color:#207548;
-            color:white;
-            text-align:center;
-            padding:60px 20px;
+        body {
+            background-color: #181a20;
+            color: #e4e7ed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:20px;
         }
-        h1{
-            font-size:42px;
+        .card {
+            width: 100%;
+            max-width:580px;
+            background:#22252e;
+            border-radius:14px;
+            padding:36px;
+            box-shadow:0 8px 30px #00000050;
+            border:1px solid #2c303b;
+        }
+        .title {
+            font-size:24px;
+            font-weight:600;
+            color:#62d2e8;
+            margin-bottom:10px;
+        }
+        .desc {
+            color:#a0a8b8;
+            margin-bottom:30px;
+            line-height:1.6;
+        }
+        .link-box{
+            background:#191c24;
+            padding:14px 16px;
+            border-radius:8px;
+            font-family:Consolas,monospace;
+            font-size:13px;
+            color:#cbd2e0;
+            word-break:break-all;
             margin-bottom:24px;
+            border:1px solid #2e3340;
         }
         .btn-group{
             display:flex;
-            gap:16px;
-            justify-content:center;
+            gap:12px;
             flex-wrap:wrap;
         }
         button{
-            padding:14px 32px;
-            font-size:17px;
+            flex:1;
+            min-width:140px;
+            padding:13px 16px;
             border:none;
-            border-radius:6px;
+            border-radius:8px;
+            font-size:15px;
+            font-weight:500;
             cursor:pointer;
+            transition: 0.2s;
         }
         .btn-vcc{
-            background:#ffffff;
-            color:#111111;
+            background:#3493a8;
+            color:white;
+        }
+        .btn-vcc:hover{
+            background:#2b7b8c;
         }
         .btn-copy{
-            background:#eeeeee;
+            background:#2f3542;
+            color:#e4e7ed;
         }
-        .desc{
-            max-width:720px;
-            margin:32px auto;
-            line-height:1.7;
-            font-size:16px;
+        .btn-copy:hover{
+            background:#3b4252;
+        }
+        .tip{
+            margin-top:26px;
+            font-size:13px;
+            color:#747c8c;
+            line-height:1.6;
+        }
+        .toast{
+            position:fixed;
+            bottom:30px;
+            left:50%;
+            transform:translateX(-50%);
+            background:#38b089;
+            color:white;
+            padding:10px 22px;
+            border-radius:8px;
+            opacity:0;
+            pointer-events:none;
+            transition:0.25s;
+        }
+        .toast.show{
+            opacity:1;
         }
     </style>
 </head>
 <body>
-<section class="hero">
-    <h1>VCC完整资源包</h1>
-    <p class="desc">个人聚合VRC头像工具源，一键添加全部常用插件源到VCC</p>
-    <div class="btn-group">
-        <a href="vcc://vpm/addRepo?url=https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json">
-            <button class="btn-vcc">添加到VCC（一键导入）</button>
-        </a>
-        <button class="btn-copy" onclick="copyText()">复制VPM源链接</button>
-    </div>
-</section>
+    <div class="card">
+        <h1 class="title">个人VPM资源源</h1>
+        <p class="desc">自定义VRChat Avatar工具汇总源，用于VCC添加仓库</p>
 
-<script>
-const vpmUrl = "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json";
-function copyText(){
-    navigator.clipboard.writeText(vpmUrl);
-    alert("已经复制VPM仓库地址！打开VCC → 设置 → Repositories粘贴添加");
-}
-</script>
+        <div class="link-box" id="vpmLink">
+https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-vcc" onclick="openVcc()">打开VCC直接导入</button>
+            <button class="btn-copy" onclick="copyLink()">复制源链接</button>
+        </div>
+
+        <div class="tip">
+💡说明：本源为空壳容器，MA、lilxyzw、VRCQuestTools需要在VCC额外手动添加对应仓库链接。<br>
+如果点击无反应，请复制链接手动粘贴到VCC的Add Repository。
+        </div>
+    </div>
+
+    <div class="toast" id="toast">复制成功</div>
+
+    <script>
+        const vpmUrl = "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json";
+        const toast = document.getElementById('toast');
+
+        function showToast(text){
+            toast.innerText = text;
+            toast.classList.add('show');
+            setTimeout(()=>toast.classList.remove('show'),1400);
+        }
+
+        function copyLink(){
+            navigator.clipboard.writeText(vpmUrl).then(()=>{
+                showToast("链接已复制");
+            }).catch(()=>{
+                showToast("复制失败，请手动复制");
+            })
+        }
+
+        function openVcc(){
+            window.open(`vcc://vpm/addRepo?url=${encodeURIComponent(vpmUrl)}`,"_self");
+        }
+    </script>
 </body>
 </html>
