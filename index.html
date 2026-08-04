@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VCC VPM Resource Source</title>
+    <title>VPM Resource Source</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -12,22 +12,12 @@
             theme: {
                 extend: {
                     colors: {
-                        neonBlue: '#00f0ff',
-                        neonPurple: '#b347ff',
-                        darkBg: '#050714',
-                        glassBg: 'rgba(15, 20, 40, 0.65)'
+                        neonBlue: '#00e5ff',
+                        neonPurple: '#a25bff',
+                        darkBg: '#080b1a',
                     },
                     fontFamily: {
-                        mono: ['JetBrains Mono','Consolas','monospace']
-                    },
-                    animation: {
-                        'pulse-glow': 'pulseGlow 2.5s infinite alternate'
-                    },
-                    keyframes: {
-                        pulseGlow: {
-                            '0%': { boxShadow:'0 0 8px #00f0ff, 0 0 14px #b347ff' },
-                            '100%': { boxShadow:'0 0 18px #00f0ff, 0 0 30px #b347ff' }
-                        }
+                        mono: ['Consolas','JetBrains Mono','monospace']
                     }
                 }
             }
@@ -35,111 +25,130 @@
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .glass {
-                background: rgba(15, 20, 40, 0.6);
-                backdrop-filter: blur(14px);
-                -webkit-backdrop-filter: blur(14px);
-                border: 1px solid rgba(0,240,255,0.18);
+            .glass-card {
+                background: rgba(16,20,40,0.65);
+                backdrop-filter: blur(16px);
+                -webkit-backdrop-filter: blur(16px);
+                border:1px solid rgba(0,229,255,0.22);
             }
-            .text-gradient {
+            .btn-gradient {
+                background: linear-gradient(90deg,#00e5ff,#a25bff);
+            }
+            .text-gradient-title {
                 background-clip:text;
                 -webkit-background-clip:text;
                 color:transparent;
-                background-image:linear-gradient(90deg,#00f0ff,#b347ff);
+                background-image:linear-gradient(90deg,#00e5ff,#a25bff);
             }
         }
-        body {
+        body{
             overflow-x:hidden;
         }
-        #particles-js {
+        #particles-js{
             position:fixed;
+            z-index:-1;
             width:100%;
             height:100%;
             top:0;
             left:0;
-            z-index:-1;
-            background:#050714;
+            background:#080b1a;
+        }
+        /* 悬浮图标发光 */
+        .cube-glow{
+            box-shadow: 0 0 24px #00e5ff, 0 0 40px #00e5ff44;
+        }
+        /* Toast 默认隐藏！！修复bug */
+        .copy-toast{
+            opacity:0;
+            transition: all 280ms ease;
+            pointer-events:none;
+        }
+        .copy-toast.show{
+            opacity:1;
         }
     </style>
 </head>
-<body class="min-h-screen flex items-center justify-center p-4 font-mono text-slate-100">
+<body class="min-h-screen flex items-center justify-center p-6 font-mono text-slate‑100">
     <div id="particles-js"></div>
 
-    <!-- 主卡片 -->
-    <div class="glass w-full max-w-xl rounded-2xl p-8 shadow-lg">
-        <div class="text-center mb-8">
-            <i class="fa fa-cube text-5xl text-neonBlue mb-4 animate-pulse-glow rounded-full p-2"></i>
-            <h1 class="text-[clamp(1.7rem,4vw,2.3rem)] font-bold text-gradient">VPM Resource Source</h1>
-            <p class="text-slate-400 mt-3">VRChat Creator Companion 第三方资源源</p>
+    <div class="glass-card w-full max-w‑2xl rounded‑3xl p‑10">
+        <!-- 顶部发光立方体图标 -->
+        <div class="text‑center">
+            <div class="w‑20 h‑20 mx‑auto rounded‑full cube‑glow flex items‑center justify‑center bg‑#0c1428">
+                <i class="fa fa‑cube text‑4xl text‑neonBlue"></i>
+            </div>
+            <h1 class="mt‑6 text‑4xl font‑bold text‑gradient‑title">VPM Resource Source</h1>
+            <p class="text‑slate‑400 mt‑3 text‑lg">VRChat Creator Companion 第三方资源源</p>
         </div>
 
-        <!-- VPM链接框 -->
-        <div class="bg-black/40 border border-neonBlue/25 rounded-lg px-4 py-3 mb-6 overflow-x-auto">
-            <code id="vpmUrl" class="text-neonBlue text-sm break-all">
-https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json
-            </code>
+        <!-- URL输入框区域 -->
+        <div class="relative mt‑8">
+            <div class="bg‑black/45 border border‑neonBlue/30 rounded‑xl p‑5">
+                <code id="vpmUrlText" class="text‑neonBlue break‑all text‑sm">
+https://guanxing77.github.io/VCC‑Complete‑Resource‑Pack/index.json
+                </code>
+            </div>
+            <!-- 复制成功提示，默认隐藏，点击才显示 -->
+            <div class="copy‑toast absolute right‑4 top‑1/2 -translate‑y‑1/2 text‑emerald‑400 flex items‑center gap‑1">
+                <i class="fa fa‑check"></i>链接已复制到剪贴板
+            </div>
         </div>
 
-        <!-- 按钮组 -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            <button onclick="openVcc()"
-                class="bg-gradient-to-r from-neonBlue to-neonPurple hover:brightness-110 transition-all rounded-lg py-3.5 font-semibold text-black">
-                <i class="fa fa-plug mr-2"></i>一键导入VCC
+        <!-- 双按钮 -->
+        <div class="grid grid‑cols‑1 md:grid‑cols‑2 gap‑5 mt‑7">
+            <button onclick="openVcc()" class="btn‑gradient py‑4 rounded‑xl font‑bold text‑black hover:brightness‑110 transition">
+                <i class="fa fa‑plug mr‑2"></i>一键导入VCC
             </button>
-            <button onclick="copyUrl()"
-                class="glass hover:border-neonPurple/60 transition-all rounded-lg py-3.5">
-                <i class="fa fa-copy mr-2"></i>复制源地址
+            <button onclick="handleCopy()" class="glass‑card py‑4 rounded‑xl hover:border‑neonPurple/60 transition">
+                <i class="fa fa‑copy mr‑2"></i>复制源地址
             </button>
         </div>
 
-        <!-- 使用提示 -->
-        <div class="border-l-2 border-neonPurple pl-4 text-sm text-slate‑300 space-y-2 text-slate-400">
-            <p>💡 <strong class="text-slate‑200">使用说明</strong></p>
-            <p>1. 点击一键导入会唤起 VCC / Keiryo</p>
-            <p>2. 网络不佳请手动复制链接，在VCC添加仓库</p>
-            <p>3. GitHub Pages部署后约1‑3分钟生效</p>
+        <!-- 使用说明 -->
+        <div class="mt‑8 pl‑4 border‑l‑2 border‑neonPurple/60">
+            <p class="text‑slate‑200 mb‑2"><i class="fa fa‑lightbulb‑o mr‑1"></i> 使用说明</p>
+            <p class="text‑slate‑400 text‑sm my‑2">1. 点击一键导入会唤起 VCC / Keiryo</p>
+            <p class="text‑slate‑400 text‑sm my‑2">2. 网络不佳请手动复制链接，在VCC添加仓库</p>
+            <p class="text‑slate‑400 text‑sm my‑2">3. GitHub Pages部署后约1‑3分钟生效</p>
         </div>
-    </div>
-
-    <!-- 复制提示弹窗 -->
-    <div id="toast" class="fixed bottom‑12 left‑1/2 -translate‑x‑1/2 bg‑emerald‑600 px‑5 py‑2 rounded-lg opacity‑0 transition‑opacity duration‑300 pointer‑events-none">
-        <i class="fa fa-check mr‑1"></i>链接已复制到剪贴板
     </div>
 
 <script>
-//粒子配置
 particlesJS("particles-js",{
     particles:{
-        number:{value:80,density:{enable:true,value_area:1000}},
-        color:{value:["#00f0ff","#b347ff"]},
+        number:{value:65,density:{enable:true,value_area:1100}},
+        color:{value:["#00e5ff","#a25bff"]},
         shape:{type:"circle"},
-        opacity:{value:0.25,random:true},
-        size:{value:2.2,random:true},
-        line_linked:{enable:true,distance:140,color:"#00f0ff",opacity:0.12,width:1},
-        move:{enable:true,speed:0.75,direction:"none",random:true,out_mode:"out"}
+        opacity:{value:0.22,random:true},
+        size:{value:2,random:true},
+        line_linked:{enable:true,distance:150,color:"#00e5ff",opacity:0.1,width:1},
+        move:{enable:true,speed:0.65,direction:"none",random:true,out_mode:"out"}
     },
     interactivity:{
         detect_on:"window",
         events:{
-            onhover:{enable:true,mode:"grab"},
-            onclick:{enable:true,mode:"push"}
+            onhover:{enable:true,mode:"grab"}
         },
-        modes:{grab:{distance:160,line_linked:{opacity:0.4}}}
+        modes:{grab:{distance:170,line_linked:{opacity:0.35}}}
     },
     retina_detect:true
 });
 
-const vpmLink = "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json";
+const VPM_REPO_URL = "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json";
+const toastDom = document.querySelector(".copy-toast");
 
+// 一键打开VCC协议
 function openVcc(){
-    window.open(`vcc://vpm/addRepo?url=${encodeURIComponent(vpmLink)}`);
+    window.open(`vcc://vpm/addRepo?url=${encodeURIComponent(VPM_REPO_URL)}`);
 }
 
-function copyUrl(){
-    navigator.clipboard.writeText(vpmLink);
-    const toast = document.getElementById("toast");
-    toast.classList.add("opacity‑100");
-    setTimeout(()=>toast.classList.remove("opacity‑100"),1600);
+// 复制函数，点击之后才弹出提示，修复BUG
+async function handleCopy(){
+    await navigator.clipboard.writeText(VPM_REPO_URL);
+    toastDom.classList.add("show");
+    setTimeout(()=>{
+        toastDom.classList.remove("show");
+    },1400);
 }
 </script>
 </body>
