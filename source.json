@@ -5,13 +5,6 @@
     "name": "十元",
     "email": "an3048897967@163.com"
   },
-  "description": "个人汇总VRC头像工具源：lilToon、ModularAvatar、VRCQuestTools、AudioLink等",
-  "sources": [
-    {"repo":"lilxyzw/vpm-repos"},
-    {"repo":"nadena-dev/vpm-repos"},
-    {"repo":"kurotu/VRCQuestTools"},
-    {"repo":"vrchat-community/AudioLink"},
-    {"repo":"vrchat-community/UdonSharp"},
-    {"repo":"vrchat-community/ClientSim"}
-  ]
+  "description": "个人汇总VRC头像工具源",
+  "sources": []
 }
