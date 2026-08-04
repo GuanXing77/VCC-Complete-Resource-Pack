@@ -1,7 +1,7 @@
 # VPM 软件包清单模板
 用于创建你自己的VPM插件清单，自带自动化构建以及自动发布功能。
 
-配置全部完成后，你只需要修改 [`source.json`](source.json) 文件，就可以生成VPM可用的插件清单，清单内所有插件都可以获得版本更新。
+配置全部完成后，你只需要修改 [`source.json`](index.json) 文件，就可以生成VPM可用的插件清单，清单内所有插件都可以获得版本更新。
 
 ## ▶ 快速开始
 
@@ -16,7 +16,7 @@
 ## 设置自动化工作流
 
 你需要修改模板中的部分配置文件，优先修改 [`source.json`](source.json)：
-- 填写清单基础信息，包括 [`name`](source.json#L2)名称、[`id`](source.json#L3)唯一ID、[`author`](source.json#L5)作者、[`description`](source.json#L10)描述等内容。
+- 填写清单基础信息，包括 [`name`](index.json#L2)名称、[`id`](index.json#L3)唯一ID、[`author`](index.json#L5)作者、[`description`](index.json#L10)描述等内容。
 - 修改第4行的`"url"`字段，把`vrchat‑community`替换为你的GitHub用户名，`template‑package‑listing`替换为你的仓库名称。
 > 这个地址就是GitHub Pages发布之后，VCC读取清单的实际链接。
 > 举个例子：GitHub账号为`thupper`，仓库名称`thupper‑listing`，url填写：`"https://thupper.github.io/thupper-listing/index.json"`。
