@@ -1,43 +1,55 @@
-# VPM Package Listing Template
+# VPM 软件包清单模板
+用于创建你自己的VPM插件清单，自带自动化构建以及自动发布功能。
 
-Starter for making your own Package Listings, including automation for building and publishing them.
+配置全部完成后，你只需要修改 [`source.json`](source.json) 文件，就可以生成VPM可用的插件清单，清单内所有插件都可以获得版本更新。
 
-Once you're all set up, you'll be able to update the [`source.json`](source.json) file, and generate a listing which works in the VPM for delivering updates for all the listed packages.
+## ▶ 快速开始
 
-## ▶ Getting Started
+* 点击 [![使用此模板](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/vrchat-community/template-package-listing/generate)
+基于该模板新建GitHub项目，跟随页面指引完成设置。
+  * 设置合适的仓库名称与描述。
+  * 仓库可见性设置为「公开」，也可以先设置为「私有」，后续再修改。
+  * **不要勾选「包含全部分支」**。
+* 你可以直接在GitHub网页编辑本项目，也可以使用Git将仓库克隆到本地进行编辑。
+  * 如果你不熟悉Git与GitHub，请查阅 [GitHub官方文档](https://docs.github.com/en/get-started/quickstart/)。
 
-* Press [![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/vrchat-community/template-package-listing/generate)
-to start a new GitHub project based on this template, and follow the directions there. 
-  * Choose a fitting repository name and description.
-  * Set the visibility to 'Public'. You can also choose 'Private' and change it later.
-  * You don't need to select 'Include all branches.'
-* Edit this project on GitHub in your web browser, or clone it repository locally using Git.
-  * If you're unfamiliar with Git and GitHub, [visit GitHub's documentation](https://docs.github.com/en/get-started/quickstart/).
-  
-## Setting up the Automation
+## 设置自动化工作流
 
-You'll need to edit some of the files in this template, starting with [`source.json`](source.json):
-- Fill out general information about your listing, such as the [`name`](source.json#L2), [`id`](source.json#L3), [`author`](source.json#L5), [`description`](source.json#L10), etc.
-- Make sure to update the ["url"](source.json#L4) field on line 4, replacing "vrchat-community" with your GitHub username, and "template-package-listing" with your repo name. This is the link that will be used to download your listing once it's published by GitHub. For example, the user "thupper" who made a repo called "thupper-listing" would update the url to "https://thupper.github.io/thupper-listing/index.json".
-- Update the "url" within ["infoLink"](source.json#L11) (on line 11) with the url of this new repo you've created.
-- If you'd like to include packages hosted on GitHub, specify them in [`githubRepos`](source.json#L16).
-- If you'd like to include packages hosted elsewhere as a `.zip` file, specify them in [`packages`](source.json#L19).
-  - You can safely remove either [`githubRepos`](source.json#L16) or [`packages`](source.json#L19) if you're not using them. 
-- Finally, go to the "Settings" page for your repo, then choose "Pages", and look for the heading "Build and deployment". Change the "Source" dropdown from "Deploy from a branch" to "GitHub Actions".
+你需要修改模板中的部分配置文件，优先修改 [`source.json`](source.json)：
+- 填写清单基础信息，包括 [`name`](source.json#L2)名称、[`id`](source.json#L3)唯一ID、[`author`](source.json#L5)作者、[`description`](source.json#L10)描述等内容。
+- 修改第4行的`"url"`字段，把`vrchat‑community`替换为你的GitHub用户名，`template‑package‑listing`替换为你的仓库名称。
+> 这个地址就是GitHub Pages发布之后，VCC读取清单的实际链接。
+> 举个例子：GitHub账号为`thupper`，仓库名称`thupper‑listing`，url填写：`"https://thupper.github.io/thupper-listing/index.json"`。
+- 修改第11行`"infoLink"`中的链接，填入当前这个仓库的GitHub地址。
+- 如果插件存放在GitHub仓库，则在 [`githubRepos`](source.json#L16) 填写相关仓库信息。
+- 如果插件是外部托管的`.zip`压缩包，则在 [`packages`](source.json#L19) 进行配置。
+  - 如果不使用`githubRepos`或者`packages`，可以直接删除该配置项。
+- 进入仓库「设置」页面，打开「Pages」设置，找到「构建和部署」。将来源下拉选项，从「从分支部署」切换为 **GitHub Actions**。
 
-## 📃 Rebuilding the Listing
+## 📃 重新构建插件清单
 
-Whenever you make a change to the `main` branch, or when you trigger it manually, the 'Build Repo Listing' action will make a new index of all the releases available and publish them as a website hosted fore free on GitHub Pages. This listing can be used by the VPM to keep your package up to date, and the generated index page can serve as a simple landing page with info for your package. The URL for your package will be in the format https://username.github.io/repo-name.
+当你向`main`分支提交改动，或者手动触发工作流，`Build Repo Listing`任务就会运行。
+该任务会读取全部发布版本，生成清单文件，通过GitHub Pages免费部署网页。
+生成完成的清单可以直接导入VPM，用来管理插件更新；同时自动生成简易网页展示你的插件信息。
 
-## 🏠 Customizing the Landing Page
+你的清单访问地址格式：
+`https://你的GitHub用户名.github.io/你的仓库名称`
 
-The contents of the `Website` directory can be customized to change the appearance of the landing page. Most of the information will be automatically filled in with information from [`source.json`](source.json). Customizing the landing page by hand is not required.
+## 🏠 自定义落地首页
 
-## Technical Stuff
+`Website`文件夹存放网页全部文件，你可以自定义页面外观。页面大部分内容会自动读取 [`source.json`](source.json) 的配置自动填充。
+> 就算不修改网页文件，整套功能依旧可以正常工作。
 
-You are welcome to make your own changes to the automation process to make it fit your needs, and you can create Pull Requests if you have some changes you think we should adopt. Here's some more info on the included automation:
+## 技术说明
 
-### Build Listing
-[build-listing.yml](.github/workflows/build-listing.yml)
+你可以自由修改自动化脚本适配你的需求。如果你有优化建议，欢迎提交Pull Request。
+下面简单介绍模板自带自动化任务：
 
-This is a composite action which builds a vpm-compatible [Repo Listing](https://vcc.docs.vrchat.com/vpm/repos) based on the items you've added to your [`source.json`](source.json) file. you've created. In order to find all your releases and combine them into a listing, it checks out [another repository](https://github.com/vrchat-community/package-list-action) which has a [Nuke](https://nuke.build/) project which includes the VPM core lib to have access to its types and methods. This project will be expanded to include more functionality in the future - for now, the action just calls its `BuildRepoListing` target, which calls `RebuildHomePage` when it completes. If you wanted to make an action that just rebuilds the home page, you could call that directly instead - just copy the existing call and replace the target names.
+### 清单构建任务
+[build‑listing.yml](.github/workflows/build-listing.yml)
+
+这是组合式工作流，读取 [`source.json`](source.json)，输出VPM能够识别的仓库清单。
+为了扫描所有Release发布版本并合并清单，工作流会拉取外部[动作仓库](https://github.com/vrchat-community/package-list-action)，内部是基于Nuke开发的VPM核心工具库。
+
+目前任务会执行`BuildRepoListing`，运行结束之后自动调用`RebuildHomePage`生成首页。
+如果你只想单独刷新首页，可以复制调用步骤，替换执行目标名称即可。
