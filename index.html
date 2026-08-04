@@ -3,145 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPM 源 | 个人资源汇总</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    <title>VPM Source | 个人资源仓库</title>
+    <!-- 引入开源CDN库 TailwindCSS + FontAwesome图标 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- 粒子背景开源库 tsParticles CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.8.1/tsparticles.bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tech: {
+                            primary: '#00e5ff',
+                            dark: '#080c18',
+                            card: 'rgba(15,23,42,0.65)'
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono','Consolas', 'monospace']
+                    }
+                }
+            }
         }
-        body {
-            background-color: #181a20;
-            color: #e4e7ed;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding:20px;
-        }
-        .card {
-            width: 100%;
-            max-width:580px;
-            background:#22252e;
-            border-radius:14px;
-            padding:36px;
-            box-shadow:0 8px 30px #00000050;
-            border:1px solid #2c303b;
-        }
-        .title {
-            font-size:24px;
-            font-weight:600;
-            color:#62d2e8;
-            margin-bottom:10px;
-        }
-        .desc {
-            color:#a0a8b8;
-            margin-bottom:30px;
-            line-height:1.6;
-        }
-        .link-box{
-            background:#191c24;
-            padding:14px 16px;
-            border-radius:8px;
-            font-family:Consolas,monospace;
-            font-size:13px;
-            color:#cbd2e0;
-            word-break:break-all;
-            margin-bottom:24px;
-            border:1px solid #2e3340;
-        }
-        .btn-group{
-            display:flex;
-            gap:12px;
-            flex-wrap:wrap;
-        }
-        button{
-            flex:1;
-            min-width:140px;
-            padding:13px 16px;
-            border:none;
-            border-radius:8px;
-            font-size:15px;
-            font-weight:500;
-            cursor:pointer;
-            transition: 0.2s;
-        }
-        .btn-vcc{
-            background:#3493a8;
-            color:white;
-        }
-        .btn-vcc:hover{
-            background:#2b7b8c;
-        }
-        .btn-copy{
-            background:#2f3542;
-            color:#e4e7ed;
-        }
-        .btn-copy:hover{
-            background:#3b4252;
-        }
-        .tip{
-            margin-top:26px;
-            font-size:13px;
-            color:#747c8c;
-            line-height:1.6;
-        }
-        .toast{
-            position:fixed;
-            bottom:30px;
-            left:50%;
-            transform:translateX(-50%);
-            background:#38b089;
-            color:white;
-            padding:10px 22px;
-            border-radius:8px;
-            opacity:0;
-            pointer-events:none;
-            transition:0.25s;
-        }
-        .toast.show{
-            opacity:1;
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass {
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+            }
+            .glow-border {
+                box-shadow: 0 0 12px #00e5ff44, inset 0 0 1px #00e5ff66;
+            }
+            .btn-glow:hover {
+                box-shadow: 0 0 18px #00e5ff80;
+            }
         }
     </style>
 </head>
-<body>
-    <div class="card">
-        <h1 class="title">个人VPM资源源</h1>
-        <p class="desc">自定义VRChat Avatar工具汇总源，用于VCC添加仓库</p>
+<body class="bg-tech-dark min-h-screen overflow-hidden relative font-mono text-slate-100">
+    <!-- 粒子画布背景 -->
+    <div id="tsparticles" class="fixed inset-0 z-0"></div>
 
-        <div class="link-box" id="vpmLink">
-https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json
-        </div>
+    <div class="relative z-10 w-full min-h-screen flex justify-center items-center px-4 py-8">
+        <div class="glass glow-border bg-tech-card border border-cyan-500/20 rounded‑2xl p‑10 w‑full max‑xl">
+            <div class="mb‑6">
+                <h1 class="text‑3xl text‑tech‑primary font‑bold mb‑2 flex items‑center gap‑3">
+                    <i class="fa‑solid fa‑cube"></i>
+                    个人 VPM 资源仓库
+                </h1>
+                <p class="text‑slate‑400">VRChat Avatar 工具源 · VCC Repository</p>
+            </div>
 
-        <div class="btn-group">
-            <button class="btn-vcc" onclick="openVcc()">打开VCC直接导入</button>
-            <button class="btn-copy" onclick="copyLink()">复制源链接</button>
-        </div>
+            <!-- VPM链接框 -->
+            <div class="bg‑slate‑900/70 rounded‑lg p‑4 border border‑cyan‑600/30 mb‑8 break‑all text‑sm text‑cyan‑200" id="vpmLink">
+https://guanxing77.github.io/VCC‑Complete‑Resource‑Pack/index.json
+            </div>
 
-        <div class="tip">
-💡说明：本源为空壳容器，MA、lilxyzw、VRCQuestTools需要在VCC额外手动添加对应仓库链接。<br>
-如果点击无反应，请复制链接手动粘贴到VCC的Add Repository。
+            <div class="flex flex‑wrap gap‑4">
+                <button onclick="openVcc()" class="btn‑glow transition‑all‑200 flex‑1 min‑w‑36 bg‑cyan‑600 hover:bg‑cyan‑500 py‑3 px‑5 rounded‑lg font‑semibold">
+                    <i class="fa‑solid fa‑bolt mr‑2"></i>一键唤起 VCC
+                </button>
+                <button onclick="copyLink()" class="btn‑glow transition‑all‑200 flex‑1 min‑w‑36 bg‑slate‑700 hover:bg‑slate‑600 py‑3 px‑5 rounded‑lg font‑semibold">
+                    <i class="fa‑solid fa‑copy mr‑2"></i>复制源链接
+                </button>
+            </div>
+
+            <div class="mt‑8 text‑sm text‑slate‑500 leading‑relaxed">
+                <p><i class="fa‑solid fa‑circle‑info mr‑1 text‑cyan‑400"></i>提示：本仓库为空壳，ModularAvatar / lilxyzw / VRCQuestTools 需要手动添加对应源</p>
+                <p class="mt‑1">唤起失败：复制链接手动粘贴进VCC Add Repository</p>
+            </div>
         </div>
     </div>
 
-    <div class="toast" id="toast">复制成功</div>
+    <!-- Toast提示弹窗 -->
+    <div id="toast" class="fixed bottom‑10 left‑1/2‑translate‑x‑1/2 bg‑cyan‑600 py‑2 px‑6 rounded‑lg opacity‑0 transition‑duration‑300 pointer‑events‑none z‑50">
+        复制成功
+    </div>
 
     <script>
         const vpmUrl = "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json";
         const toast = document.getElementById('toast');
 
+        // 粒子背景初始化 tsparticles开源库
+        tsparticles.load("#tsparticles", {
+            background: { color: "#080c18" },
+            particles: {
+                color: { value: "#00e5ff" },
+                number: { value:60 },
+                opacity: { value:0.25 },
+                size: { value: {min:1, max:3}},
+                move: { enable:true, speed:0.6 },
+                links: { enable:true, color:"#00e5ff", opacity:0.12 }
+            },
+            interactivity: {
+                events: { onHover: { enable:true, mode:"grab" } }
+            }
+        });
+
         function showToast(text){
             toast.innerText = text;
-            toast.classList.add('show');
-            setTimeout(()=>toast.classList.remove('show'),1400);
+            toast.classList.add('opacity‑100');
+            setTimeout(()=> toast.classList.remove('opacity‑100'),1500);
         }
 
         function copyLink(){
             navigator.clipboard.writeText(vpmUrl).then(()=>{
-                showToast("链接已复制");
+                showToast("✅链接复制完成");
             }).catch(()=>{
-                showToast("复制失败，请手动复制");
+                showToast("❌复制失败，请手动复制");
             })
         }
 
