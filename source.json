@@ -1,12 +1,25 @@
 {
-  "name": "个人VPM资源源",
-  "id": "com.guanxing77.vpmcollection",
-  "url": "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json",
+  "name": "个人 VPM 聚合源",
+  "id": "com.guanxing77.vcc-complete-resource-pack",
   "author": {
-    "name": "GuanXing77"
+    "name": "十元"
   },
-  "description": "自定义VRChat Avatar工具汇总源，用于VCC添加仓库",
-  "infoLink": "https://github.com/GuanXing77/VCC-Complete-Resource-Pack",
-  "githubRepos": [],
+  "description": "VRChat头像制作工具聚合，整合大量社区VPM仓库",
+  "githubRepos": [
+    "https://lilxyzw.github.io/vpm-repos/vpm.json",
+    "https://xtlcdm.github.io/vpm-repos/vpm.json",
+    "https://vpm.nadena.dev/vpm.json",
+    "https://vpm.kwxxw.net/vpm.json",
+    "https://vcc.vrcfury.com/vpm.json",
+    "https://suzuryg.github.io/vpm-repos/vpm.json",
+    "https://kurotu.github.io/vpm-repos/vpm.json",
+    "https://vpm.narazaka.net/vpm.json",
+    "https://azukimochi.github.io/vpm-repos/vpm.json",
+    "https://vpm.anatawa12.com/vpm.json",
+    "https://vrcd.vrczh.org/vpm.json",
+    "https://vpm.pimaker.at/vpm.json",
+    "https://vpm.limitex.dev/vpm.json",
+    "https://redsim.github.io/vpm-repos/vpm.json"
+  ],
   "packages": []
 }
