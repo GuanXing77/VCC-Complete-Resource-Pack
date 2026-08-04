@@ -1,12 +1,145 @@
-{
-  "name": "个人VPM资源源",
-  "id": "com.guanxing77.vpmcollection",
-  "url": "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json",
-  "author": {
-    "name": "GuanXing77"
-  },
-  "description": "自定义VRChat Avatar工具汇总源，用于VCC添加仓库",
-  "infoLink": "https://github.com/GuanXing77/VCC-Complete-Resource-Pack",
-  "githubRepos": [],
-  "packages": []
-}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人VPM资源源</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+        }
+        body{
+            min-height:100vh;
+            background:#12141a;
+            background-image: radial-gradient(circle at 10% 20%, #1e2230 0%, #12141a 70%);
+            color:#e4e7ed;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:20px;
+        }
+        .card{
+            width:100%;
+            max-width:540px;
+            background:#1a1d27;
+            border-radius:18px;
+            padding:40px 32px;
+            border:1px solid #2c313f;
+            box-shadow: 0 10px 40px #090b1088;
+        }
+        h1{
+            text-align:center;
+            font-size:28px;
+            color:#62d8f5;
+            margin-bottom:10px;
+        }
+        .desc{
+            text-align:center;
+            color:#a2acbd;
+            margin-bottom:32px;
+            line-height:1.6;
+        }
+        .url-box{
+            background:#0f1118;
+            border:1px solid #333948;
+            border-radius:10px;
+            padding:14px 16px;
+            font-family:monospace;
+            font-size:13px;
+            color:#89cff0;
+            word-break:break-all;
+            margin-bottom:24px;
+        }
+        .btn-wrap{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:14px;
+            margin-bottom:28px;
+        }
+        button{
+            padding:14px;
+            border:none;
+            border-radius:10px;
+            font-size:15px;
+            font-weight:500;
+            cursor:pointer;
+            transition:0.2s;
+        }
+        .btn-vcc{
+            background:#20a8c7;
+            color:white;
+        }
+        .btn-vcc:hover{background:#188ca8;}
+        .btn-copy{
+            background:#2c313f;
+            color:#e4e7ed;
+        }
+        .btn-copy:hover{background:#383e4f;}
+        .tip{
+            font-size:13px;
+            color:#8892a3;
+            line-height:1.7;
+        }
+        .tip strong{
+            color:#b4c2da;
+        }
+        .toast{
+            position:fixed;
+            bottom:30px;
+            left:50%;
+            transform:translateX(-50%);
+            background:#27bd77;
+            color:white;
+            padding:10px 22px;
+            border-radius:8px;
+            opacity:0;
+            pointer-events:none;
+            transition:0.25s;
+        }
+        .toast.show{opacity:1;}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>个人VPM资源源</h1>
+        <div class="desc">
+            VRChat工具聚合源，用于 VRChat Creator Companion 添加仓库
+        </div>
+
+        <div class="url-box" id="vpmUrl">
+https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json
+        </div>
+
+        <div class="btn-wrap">
+            <button class="btn-vcc" onclick="window.open('vcc://vpm/addRepo?url=https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json')">
+                一键导入VCC
+            </button>
+            <button class="btn-copy" onclick="copyUrl()">
+                复制源链接
+            </button>
+        </div>
+
+        <div class="tip">
+💡使用提示：
+<br>1. 一键导入没反应，请手动复制链接粘贴进VCC的 Add Repository
+<br>2. 本源为聚合容器，不会自带插件，需要自行在source.json添加githubRepos
+<br>3. 如果访问404，请等待GitHub Actions构建完成，等待2‑3分钟缓存
+        </div>
+    </div>
+
+    <div class="toast" id="toast">已复制链接！</div>
+
+    <script>
+        function copyUrl(){
+            const text = document.getElementById('vpmUrl').innerText.trim();
+            navigator.clipboard.writeText(text);
+            const t = document.getElementById('toast');
+            t.classList.add('show');
+            setTimeout(()=>t.classList.remove('show'),1500);
+        }
+    </script>
+</body>
+</html>
