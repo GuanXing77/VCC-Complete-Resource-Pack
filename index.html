@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCC完整资源包</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+        .hero{
+            background-color:#207548;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+        h1{
+            font-size:42px;
+            margin-bottom:24px;
+        }
+        .btn-group{
+            display:flex;
+            gap:16px;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        button{
+            padding:14px 32px;
+            font-size:17px;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+        }
+        .btn-vcc{
+            background:#ffffff;
+            color:#111111;
+        }
+        .btn-copy{
+            background:#eeeeee;
+        }
+        .desc{
+            max-width:720px;
+            margin:32px auto;
+            line-height:1.7;
+            font-size:16px;
+        }
+    </style>
+</head>
+<body>
+<section class="hero">
+    <h1>VCC完整资源包</h1>
+    <p class="desc">个人聚合VRC头像工具源，一键添加全部常用插件源到VCC</p>
+    <div class="btn-group">
+        <a href="vcc://vpm/addRepo?url=https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json">
+            <button class="btn-vcc">添加到VCC（一键导入）</button>
+        </a>
+        <button class="btn-copy" onclick="copyText()">复制VPM源链接</button>
+    </div>
+</section>
+
+<script>
+const vpmUrl = "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json";
+function copyText(){
+    navigator.clipboard.writeText(vpmUrl);
+    alert("已经复制VPM仓库地址！打开VCC → 设置 → Repositories粘贴添加");
+}
+</script>
+</body>
+</html>
