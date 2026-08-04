@@ -1,7 +1,7 @@
 # VPM 软件包清单模板
 用于创建你自己的VPM插件清单，自带自动化构建以及自动发布功能。
 
-配置全部完成后，你只需要修改 [`source.json`](index.json) 文件，就可以生成VPM可用的插件清单，清单内所有插件都可以获得版本更新。
+配置全部完成后，你只需要修改 [`index.json`](index.json) 文件，就可以生成VPM可用的插件清单，清单内所有插件都可以获得版本更新。
 
 ## ▶ 快速开始
 
@@ -15,14 +15,14 @@
 
 ## 设置自动化工作流
 
-你需要修改模板中的部分配置文件，优先修改 [`source.json`](source.json)：
+你需要修改模板中的部分配置文件，优先修改 [`index.json`](index.json)：
 - 填写清单基础信息，包括 [`name`](index.json#L2)名称、[`id`](index.json#L3)唯一ID、[`author`](index.json#L5)作者、[`description`](index.json#L10)描述等内容。
 - 修改第4行的`"url"`字段，把`vrchat‑community`替换为你的GitHub用户名，`template‑package‑listing`替换为你的仓库名称。
 > 这个地址就是GitHub Pages发布之后，VCC读取清单的实际链接。
 > 举个例子：GitHub账号为`thupper`，仓库名称`thupper‑listing`，url填写：`"https://thupper.github.io/thupper-listing/index.json"`。
-- 修改第11行`"infoLink"`中的链接，填入当前这个仓库的GitHub地址。
-- 如果插件存放在GitHub仓库，则在 [`githubRepos`](source.json#L16) 填写相关仓库信息。
-- 如果插件是外部托管的`.zip`压缩包，则在 [`packages`](source.json#L19) 进行配置。
+- 修改第5行`"url"`中的链接，填入当前这个仓库的GitHub地址。
+- 如果插件存放在GitHub仓库，则在 [`githubRepos`](index.json#L16) 填写相关仓库信息。
+- 如果插件是外部托管的`.zip`压缩包，则在 [`packages`](index.json#L19) 进行配置。
   - 如果不使用`githubRepos`或者`packages`，可以直接删除该配置项。
 - 进入仓库「设置」页面，打开「Pages」设置，找到「构建和部署」。将来源下拉选项，从「从分支部署」切换为 **GitHub Actions**。
 
@@ -37,7 +37,7 @@
 
 ## 🏠 自定义落地首页
 
-`Website`文件夹存放网页全部文件，你可以自定义页面外观。页面大部分内容会自动读取 [`source.json`](source.json) 的配置自动填充。
+`Website`文件夹存放网页全部文件，你可以自定义页面外观。页面大部分内容会自动读取 [`index.json`](index.json) 的配置自动填充。
 > 就算不修改网页文件，整套功能依旧可以正常工作。
 
 ## 技术说明
@@ -48,7 +48,7 @@
 ### 清单构建任务
 [build‑listing.yml](.github/workflows/build-listing.yml)
 
-这是组合式工作流，读取 [`source.json`](source.json)，输出VPM能够识别的仓库清单。
+这是组合式工作流，读取 [`index.json`](index.json)，输出VPM能够识别的仓库清单。
 为了扫描所有Release发布版本并合并清单，工作流会拉取外部[动作仓库](https://github.com/vrchat-community/package-list-action)，内部是基于Nuke开发的VPM核心工具库。
 
 目前任务会执行`BuildRepoListing`，运行结束之后自动调用`RebuildHomePage`生成首页。
