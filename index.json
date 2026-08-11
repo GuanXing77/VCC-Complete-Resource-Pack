@@ -1798,6 +1798,20 @@
           "repo": "https://lilxyzw.github.io/vpm-repos/vpm.json",
           "zipSHA256": "12fad6b1d4642c36ea069b5adcc0fb42194068afbce348eb85266ecb67f9abc7"
         }
+        {
+          "name": "jp.lilxyzw.nontoon",
+          "version": "0.1.3",
+          "displayName": "NonToon",
+          "description": "",
+          "unity": "2022.3",
+          "hideInEditor": false,
+          "url": "https://github.com/lilxyzw/NonToon/releases/download/0.1.3/jp.lilxyzw.nontoon-0.1.3.zip?",
+          "repo": "https://lilxyzw.github.io/vpm-repos/vpm.json",
+          "vpmDependencies": {
+          "jp.lilxyzw.shadercore": "^0.1.5"
+        },
+        "zipSHA256": "d7597d9ef1e43b342deccbe0908ddc2c8500e6b1105786ff7b3d70874b4dfeec"
+}
       }
     }
   }
