@@ -1,8 +1,8 @@
 {
-  "name": "PoetryFarVPN",
-  "id": "com.guanxing77.vpmcollection",
-  "author": "GuanXing77",
-  "url": "https://guanxing77.github.io/VCC-Complete-Resource-Pack/index.json",
+  "name": "MoLucien VPM Collection",
+  "id": "com.molucien.vpmcollection",
+  "author": "MoLucien",
+  "url": "https://molucien.github.io/VCC-Complete-Resource-Pack/index.json",
   "packages": {
     "jp.lilxyzw.liltoon": {
       "versions": {
